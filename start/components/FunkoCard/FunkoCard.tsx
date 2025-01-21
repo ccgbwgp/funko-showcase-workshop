@@ -27,17 +27,6 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               <Typography gutterBottom variant="h3" component="div" sx={{ fontSize: '1em' }}>
                 {funko.character}
               </Typography>
-            </CardContent>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {funko.character}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Series: {funko.series}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Number: {funko.number}
-              </Typography>
               <Typography variant="body2" color="text.secondary">
                 Released: {funko.yearReleased}
               </Typography>
