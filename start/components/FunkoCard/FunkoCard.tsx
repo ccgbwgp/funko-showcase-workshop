@@ -21,6 +21,14 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               alt={funko.character}
             />
             <CardContent>
+              <Typography gutterBottom variant="h2" component="div" sx={{ fontSize: '2em', fontWeight: 'bold' }}>
+                {funko.source}
+              </Typography>
+              <Typography gutterBottom variant="h3" component="div" sx={{ fontSize: '1em' }}>
+                {funko.character}
+              </Typography>
+            </CardContent>
+            <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {funko.character}
               </Typography>
@@ -29,6 +37,12 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 Number: {funko.number}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Released: {funko.yearReleased}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Number in Line: {funko.numberInLine}
               </Typography>
               <EditFunkoButton funko={funko} setFunkos={setFunkos} />
             </CardContent>
