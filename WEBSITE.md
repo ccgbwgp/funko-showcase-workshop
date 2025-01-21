@@ -38,7 +38,7 @@
     ```
 3. Run the following command to install project dependencies:
     ``` bash
-    npm install
+    
     ```
 
 ## 4.4 Run Your Website Locally

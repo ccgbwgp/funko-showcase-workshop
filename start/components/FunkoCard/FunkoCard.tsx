@@ -20,10 +20,18 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               image={funko.imageUrl}
               alt={funko.character}
             />
-
-            {/* Add the Card code here */}
-            {/* Add the EditFunkoButton component here */}
-
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {funko.character}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Series: {funko.series}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Number: {funko.number}
+              </Typography>
+              <EditFunkoButton funko={funko} setFunkos={setFunkos} />
+            </CardContent>
           </Card>
         );
       })}
